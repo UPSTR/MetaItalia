@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+          integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="owlCarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlCarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrap errorPage">
+    <!--HEADER-->
+
+    <div class="container headerContainer">
+        <div class="header">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="/"><img src="img/logo.png" alt=""></a>
+                </div>
+                <div class="col-12 contactInfoAndNav text-center">
+
+                    <div class="navigation tmenu">
+                        <ul>
+                            <li>
+                                <a href="">Главная</a>
+                            </li>
+                            <li>
+                                <a href="">Экскурсии</a>
+                            </li>
+                            <li>
+                                <a href="">Экскурсионные пакеты</a>
+                            </li>
+                            <li>
+                                <a href="">Трансферы</a>
+                            </li>
+                            <li>
+                                <a href="">Шоп-туры</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END HEADER-->
+
+   <div class="thanksBlock">
+       <div class="container">
+           <div class="row">
+               <div class="col-12 text-center">
+                   <div class="errorPageImg">
+                       <img src="img/404.png" alt="">
+                   </div>
+                   <div class="title">
+                       Ошибка 404. Нет такой страницы
+                   </div>
+                   <div class="afterTitle">
+                       Если вы считаете, что страницы нет по нашей вине, <a href="">напишите нам</a>.
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<!--MOBILE MENU-->
+<script src="js/mobile.js"></script>
+<!--OWL CAROUSEL-->
+<script src="owlCarousel/owl.carousel.min.js"></script>
+<!--MAIN SCRIPT-->
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel.topSliders").owlCarousel({
+            loop:true,
+            margin:0,
+            nav: true,
+            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            navElement: 'div',
+            autoplay: false,
+            responsiveClass:true,
+            items:1,
+            autoHeight: false,
+            autoHeightClass: 'owl-height',
+            dots: false
+        });
+        $('.owl-carousel.owl-review').owlCarousel({
+            loop:true,
+            margin: 0,
+            nav: true,
+            navText: ['<i class="fas fa-angle-left"></i>', '<i class="fas fa-angle-right"></i>'],
+            navElement: 'div',
+            autoplay: false,
+            responsiveClass:true,
+            items:2,
+            autoHeight: false,
+            autoHeightClass: 'owl-height',
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:2
+                }
+            }
+        });
+        $('.owl-carousel.catalogItemCarousel').owlCarousel({
+            loop:true,
+            margin:1,
+            nav:true,
+            dots: false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        })
+    });
+</script>
+
+</body>
+</html>
