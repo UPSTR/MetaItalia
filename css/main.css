@@ -213,6 +213,7 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex: 1;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -222,17 +223,25 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  height: 550px; }
   .wrap .slider .slideContent h1 {
     font-size: 60px;
     font-weight: 600; }
   .wrap .slider .slideContent .slideText {
-    max-width: 728px;
+    max-width: 700px;
     letter-spacing: 1px;
     margin: 30px 0; }
     @media screen and (max-width: 768px) {
       .wrap .slider .slideContent .slideText {
-        margin: 10px 0 10px 0px; } }
+        margin: 10px 0 10px 0px;
+        padding: 0 40px; } }
+    @media screen and (max-width: 768px) {
+      .wrap .slider .slideContent .slideText {
+        padding: 0 50px; } }
   .wrap .slider .slideContent .slideControl .slideBtn {
     height: 60px;
     -webkit-border-radius: 30px;
@@ -377,7 +386,11 @@ body {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    height: 300px; }
     .wrap .sitiesList .cityItem .cityText .cityName {
       border-bottom: 1px solid #ffffff; }
 .wrap .section {
@@ -551,11 +564,11 @@ body {
     width: 100%;
     height: 100%;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
     /* IE6-9 */
@@ -616,9 +629,7 @@ body {
         width: 260px;
         margin: -25px auto 0 auto; } }
     .wrap .footer .contactBlock button {
-      position: absolute;
       margin-top: -30px;
-      margin-left: -30px;
       background: #e32122;
       width: 60px;
       height: 60px;
@@ -633,7 +644,7 @@ body {
       .wrap .footer .contactBlock button:hover {
         background: #cd2122; }
     .wrap .footer .contactBlock .contactText {
-      padding: 40px 0; }
+      padding: 20px 0; }
   .wrap .footer .payInfo {
     text-align: center;
     margin-top: 30px; }
@@ -848,6 +859,10 @@ body {
     -moz-border-radius: 7px;
     border-radius: 7px;
     margin-top: 50px; }
+    @media screen and (max-width: 768px) {
+      .wrap .catalogItemSlide .slideContent .type {
+        margin-top: 20px;
+        margin-bottom: 20px; } }
   .wrap .catalogItemSlide .slideContent .priseBlockControl {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1026,6 +1041,10 @@ body {
         -webkit-transition: box-shadow 0.3s;
         /* Safari */
         transition: box-shadow 0.3s; }
+        @media screen and (max-width: 1200px) {
+          .wrap .catalogList .productItem .itemInfo .selectBtn {
+            margin-top: 20px;
+            width: 100%; } }
         .wrap .catalogList .productItem .itemInfo .selectBtn:hover {
           -webkit-transition: box-shadow 0.3s;
           /* Safari */

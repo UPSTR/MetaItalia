@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
           integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
           crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/prettyphoto/3.1.5/css/prettyPhoto.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="owlCarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlCarousel/assets/owl.theme.default.min.css">
@@ -108,7 +111,7 @@
             </div>
             <div class="container slideContent">
                 <div class="row">
-                    <div class="col-sm-7">
+                    <div class="col-sm-12 col-md-7">
                         <div class="city">
                             Милан, Италия
                         </div>
@@ -117,7 +120,7 @@
                             <i class="fas fa-users"></i> групповая экскурсия
                         </div>
                     </div>
-                    <div class="col-sm-5 text-sm-right priseBlockControl">
+                    <div class="col-sm-12 col-md-5 text-center text-sm-center text-md-right priseBlockControl">
                         <div class="priceBlock">
                             <div class="priceBg">
                                 <span class="price">40<sup>$</sup></span>
@@ -138,24 +141,24 @@
 
     <!--CAROUSEL-->
     <div class="owl-carousel owl-theme catalogItemCarousel">
-        <div class="item">
+        <a class="item" href="img/gallery1.jpg" rel="prettyPhoto">
             <img src="img/gallery1.jpg" alt="">
-        </div>
-        <div class="item">
+        </a>
+        <a class="item" href="img/gallery2.jpg" rel="prettyPhoto">
             <img src="img/gallery2.jpg" alt="">
-        </div>
-        <div class="item">
+        </a>
+        <a class="item" href="img/gallery3.jpg" rel="prettyPhoto">
             <img src="img/gallery3.jpg" alt="">
-        </div>
-        <div class="item">
+        </a>
+        <a class="item" href="img/gallery4.jpg" rel="prettyPhoto">
+            <img src="img/gallery4.jpg" alt="">
+        </a>
+        <a class="item" href="img/gallery1.jpg" rel="prettyPhoto">
             <img src="img/gallery1.jpg" alt="">
-        </div>
-        <div class="item">
+        </a>
+        <a class="item" href="img/gallery2.jpg" rel="prettyPhoto">
             <img src="img/gallery2.jpg" alt="">
-        </div>
-        <div class="item">
-            <img src="img/gallery3.jpg" alt="">
-        </div>
+        </a>
     </div>
     <!--END CAROUSEL-->
 
@@ -471,16 +474,46 @@
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <!--MOBILE MENU-->
 <script src="js/mobile.js"></script>
 <!--OWL CAROUSEL-->
 <script src="owlCarousel/owl.carousel.min.js"></script>
+<script src="http://cdn.jsdelivr.net/prettyphoto/3.1.5/js/jquery.prettyPhoto.js"></script>
 <!--MAIN SCRIPT-->
 <script>
     $(document).ready(function(){
+
+        $("a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed: 'normal',
+            slideshow: 2000,
+            autoplay_slideshow: false,
+            opacity: 0.80,
+            show_title: true,
+            allow_resize: true,
+            counter_separator_label: '/',
+            theme: 'pp_default',
+            horizontal_padding: 10,
+            hideflash: true,
+            wmode: 'opaque',
+            autoplay: true,
+            modal: false,
+            deeplinking: false,
+            overlay_gallery: true,
+            keyboard_shortcuts: true,
+            changepicturecallback: onPictureChanged,
+            ie6_fallback: true
+        });
+        function onPictureChanged() {
+            var twitterDiv = jQuery('.twitter');
+            twitterDiv.empty();
+            var fbDiv = jQuery('.facebook');
+            fbDiv.empty();
+        }
+
+
         $(".owl-carousel.topSliders").owlCarousel({
             loop:true,
             margin:0,
