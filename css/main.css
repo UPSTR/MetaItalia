@@ -615,6 +615,9 @@ body {
         .wrap .footer ul li a i {
           margin-right: 10px;
           width: 20px; }
+  .wrap .footer .contactInfo ul li span {
+    margin-left: 15px;
+    display: inline-block; }
   .wrap .footer .contactBlock {
     background: url("../img/contactBg.png") no-repeat;
     text-align: center;
@@ -1015,7 +1018,7 @@ body {
         margin-top: 20px; }
       .wrap .catalogList .productItem .itemInfo .groupInfo {
         color: #a4a6b0; }
-      .wrap .catalogList .productItem .itemInfo .selectBtn {
+      .wrap .catalogList .productItem .itemInfo .mainLink {
         width: 130px;
         height: 50px;
         cursor: pointer;
@@ -1042,10 +1045,10 @@ body {
         /* Safari */
         transition: box-shadow 0.3s; }
         @media screen and (max-width: 1200px) {
-          .wrap .catalogList .productItem .itemInfo .selectBtn {
+          .wrap .catalogList .productItem .itemInfo .mainLink {
             margin-top: 20px;
             width: 100%; } }
-        .wrap .catalogList .productItem .itemInfo .selectBtn:hover {
+        .wrap .catalogList .productItem .itemInfo .mainLink:hover {
           -webkit-transition: box-shadow 0.3s;
           /* Safari */
           transition: box-shadow 0.3s;
@@ -1607,5 +1610,46 @@ body {
     margin-top: 20px; }
   .wrap.errorPage .thanksBlock .afterTitle {
     margin-top: 20px; }
+
+.mainLink {
+  height: 60px;
+  padding: 11px 30px;
+  cursor: pointer;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: none;
+  display: inline-block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8aa48+0,ef7f1b+100 */
+  background: #f8aa48;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #f8aa48 0%, #ef7f1b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #f8aa48 0%, #ef7f1b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #f8aa48 0%, #ef7f1b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8aa48', endColorstr='#ef7f1b', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: box-shadow 0.3s;
+  /* Safari */
+  transition: box-shadow 0.3s; }
+  @media screen and (max-width: 992px) {
+    .mainLink {
+      display: inline-block;
+      width: 100%; } }
+  .mainLink:hover {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: box-shadow 0.3s;
+    /* Safari */
+    transition: box-shadow 0.3s;
+    -webkit-box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5);
+    -moz-box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5);
+    box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5); }
 
 /*# sourceMappingURL=main.css.map */

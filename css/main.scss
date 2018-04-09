@@ -770,6 +770,16 @@ body {
         }
       }
     }
+    .contactInfo {
+      ul {
+        li {
+          span {
+            margin-left: 15px;
+            display: inline-block;
+          }
+        }
+      }
+    }
     .contactBlock {
       background: url("../img/contactBg.png") no-repeat;
       text-align: center;
@@ -1225,7 +1235,7 @@ body {
         .groupInfo {
           color: #a4a6b0;
         }
-        .selectBtn {
+        .mainLink {
           width: 130px;
           height: 50px;
           cursor: pointer;
@@ -1936,6 +1946,42 @@ body {
     .afterTitle {
       margin-top: 20px;
     }
+  }
+}
+
+.mainLink {
+  height: 60px;
+  padding: 11px 30px;
+  cursor: pointer;
+  border: 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  color: $color9;
+  font-size: 24px;
+  text-transform: uppercase;
+  outline: none;
+  display: inline-block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8aa48+0,ef7f1b+100 */
+  background: rgb(248, 170, 72); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(248, 170, 72, 1) 0%, rgba(239, 127, 27, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(248, 170, 72, 1) 0%, rgba(239, 127, 27, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(248, 170, 72, 1) 0%, rgba(239, 127, 27, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8aa48', endColorstr='#ef7f1b', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+  -webkit-transition: box-shadow 0.3s; /* Safari */
+  transition: box-shadow 0.3s;
+  @media screen and (max-width: $lg) {
+    display: inline-block;
+    width: 100%;
+  }
+  &:hover {
+    color: $color9;
+    text-decoration: none;
+    -webkit-transition: box-shadow 0.3s; /* Safari */
+    transition: box-shadow 0.3s;
+    -webkit-box-shadow: 0px 0px 15px 6px rgba(248,170,72,0.5);
+    -moz-box-shadow: 0px 0px 15px 6px rgba(248,170,72,0.5);
+    box-shadow: 0px 0px 15px 6px rgba(248,170,72,0.5);
   }
 }
 
