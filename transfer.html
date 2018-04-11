@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
           integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
           crossorigin="anonymous">
+
+    <link rel="stylesheet" href="datepicker/css/bootstrap-datepicker.css">
+
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="owlCarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlCarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="datepicker/js/bootstrap-datepicker.js"></script>
 </head>
 <body>
 
@@ -165,16 +169,7 @@
                                     <div class="label">
                                         <i class="fas fa-calendar-alt"></i> Дата
                                     </div>
-                                    <div class="dropdown mainDropdown">
-                                        <button class="btn btn-light dropdown-toggle btn-block" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            12.03.2018
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">12.03.2018</a>
-                                            <a class="dropdown-item" href="#">12.03.2018</a>
-                                            <a class="dropdown-item" href="#">12.03.2018</a>
-                                        </div>
-                                    </div>
+                                    <input type="text" class="form-control dateControl" id="startDate">
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-6">
@@ -412,6 +407,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+
+<script src="datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
 <!--MOBILE MENU-->
 <script src="js/mobile.js"></script>
 <!--OWL CAROUSEL-->
@@ -419,6 +417,24 @@
 <!--MAIN SCRIPT-->
 <script>
     $(document).ready(function(){
+
+        $('#startDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            icons: {
+                rightIcon: '<i class="fas fa-chevron-down"></i>'
+            }
+        });
+        $('#endDate').datepicker({
+            uiLibrary: 'bootstrap4',
+            icons: {
+                rightIcon: '<i class="fas fa-chevron-down"></i>'
+            }
+        });
+
+        $('#sandbox-container input').datepicker({
+            language: "ru"
+        });
+
         $(".owl-carousel.topSliders").owlCarousel({
             loop:true,
             margin:0,
@@ -473,6 +489,8 @@
                 }
             }
         })
+
+
     });
 </script>
 </body>

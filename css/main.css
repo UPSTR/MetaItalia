@@ -1243,6 +1243,30 @@ body {
     margin-bottom: 5px; }
   .wrap .formGroup .afterText {
     margin-top: 5px; }
+.wrap .dateControl {
+  text-align: left;
+  height: 60px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: 3px solid #e8e8eb;
+  font-size: 18px;
+  background: #ffffff;
+  outline: none; }
+  .wrap .dateControl:after {
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSIjZThlOGViIiBkPSJNMTQzIDM1Mi4zTDcgMjE2LjNjLTkuNC05LjQtOS40LTI0LjYgMC0zMy45bDIyLjYtMjIuNmM5LjQtOS40IDI0LjYtOS40IDMzLjkgMGw5Ni40IDk2LjQgOTYuNC05Ni40YzkuNC05LjQgMjQuNi05LjQgMzMuOSAwbDIyLjYgMjIuNmM5LjQgOS40IDkuNCAyNC42IDAgMzMuOWwtMTM2IDEzNmMtOS4yIDkuNC0yNC40IDkuNC0zMy44IDB6Ii8+PC9zdmc+);
+    width: 13px;
+    height: 20px;
+    border: none; }
+.wrap .dateComponent input {
+  padding-left: 40px; }
+.wrap .dateComponent i {
+  position: absolute;
+  top: 53px;
+  left: 32px; }
 .wrap .mainDropdown button {
   text-align: left;
   height: 60px;
@@ -1358,6 +1382,10 @@ body {
   border: 3px solid #e8e8eb;
   font-size: 18px;
   background: #ffffff; }
+.wrap .errorControl label {
+  color: #bf423a; }
+.wrap .errorControl input.form-control {
+  border: 3px solid #bf423a; }
 .wrap .confirmBlock {
   margin-top: 20px;
   margin-bottom: 130px; }
@@ -1651,5 +1679,18 @@ body {
     -webkit-box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5);
     -moz-box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5);
     box-shadow: 0px 0px 15px 6px rgba(248, 170, 72, 0.5); }
+
+.itemInfoMap .btn-danger {
+  position: absolute;
+  right: 27px;
+  top: 15px; }
+
+#itemInfoMap {
+  top: 0px;
+  left: 10px;
+  width: 100%;
+  height: 511px;
+  border-radius: 10px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */

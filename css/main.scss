@@ -1499,6 +1499,38 @@ body {
     }
   }
 
+  .dateControl {
+    text-align: left;
+    height: 60px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    border: 3px solid $color8;
+    font-size: 18px;
+    background: $color9;
+    outline: none;
+    &:after {
+      position: absolute;
+      right: 20px;
+      top: 21px;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgNTEyIj48cGF0aCBmaWxsPSIjZThlOGViIiBkPSJNMTQzIDM1Mi4zTDcgMjE2LjNjLTkuNC05LjQtOS40LTI0LjYgMC0zMy45bDIyLjYtMjIuNmM5LjQtOS40IDI0LjYtOS40IDMzLjkgMGw5Ni40IDk2LjQgOTYuNC05Ni40YzkuNC05LjQgMjQuNi05LjQgMzMuOSAwbDIyLjYgMjIuNmM5LjQgOS40IDkuNCAyNC42IDAgMzMuOWwtMTM2IDEzNmMtOS4yIDkuNC0yNC40IDkuNC0zMy44IDB6Ii8+PC9zdmc+);
+      width: 13px;
+      height: 20px;
+      border: none;
+    }
+  }
+
+  .dateComponent {
+    input {
+      padding-left: 40px;
+    }
+    i {
+      position: absolute;
+      top: 53px;
+      left: 32px;
+    }
+  }
+
   .mainDropdown {
     button {
       text-align: left;
@@ -1643,6 +1675,17 @@ body {
       background: #ffffff;
     }
   }
+
+  .errorControl {
+    label {
+      color: #bf423a;
+    }
+    input.form-control {
+      border: 3px solid #bf423a;
+    }
+  }
+
+
 
   .confirmBlock {
     margin-top: 20px;
@@ -1985,3 +2028,19 @@ body {
   }
 }
 
+.itemInfoMap {
+  .btn-danger {
+    position: absolute;
+    right: 27px;
+    top: 15px;
+  }
+}
+
+#itemInfoMap {
+  top: 0px;
+  left: 10px;
+  width: 100%;
+  height: 511px;
+  border-radius: 10px;
+  overflow: hidden;
+}
