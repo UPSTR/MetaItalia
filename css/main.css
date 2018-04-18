@@ -243,11 +243,12 @@ body {
       .wrap .slider .slideContent .slideText {
         padding: 0 50px; } }
   .wrap .slider .slideContent .slideControl .slideBtn {
+    display: inline-block;
     height: 60px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
-    padding: 0 25px;
+    padding: 13px 25px;
     font-size: 24px;
     border: none;
     outline: none;
@@ -1692,5 +1693,90 @@ body {
   height: 511px;
   border-radius: 10px;
   overflow: hidden; }
+
+select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 10px;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  text-align: left;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #0b0e17;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  line-height: 1.5;
+  background: #ffffff; }
+
+.select {
+  height: 100%; }
+
+.select::after {
+  line-height: 30px;
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  right: 28px;
+  bottom: 0;
+  padding: 0 1px;
+  background: #ffffff;
+  pointer-events: none;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0;
+  margin-top: -3px;
+  vertical-align: 0;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent; }
+
+.selectForm {
+  text-align: left;
+  height: 60px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border: 3px solid #e8e8eb;
+  font-size: 18px;
+  background: url(../img/arrSelect.png) 96%/20px no-repeat #ffffff;
+  position: relative; }
+
+.selectForm::after {
+  border: none; }
+
+.selectForm select {
+  background: transparent; }
+
+.filter .select {
+  height: 60px; }
+.filter select {
+  height: 60px; }
+@media screen and (max-width: 992px) {
+  .filter .select {
+    margin: 10px 0; } }
 
 /*# sourceMappingURL=main.css.map */
