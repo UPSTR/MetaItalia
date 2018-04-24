@@ -218,6 +218,12 @@ body {
           }
           @media screen and (max-width: $lg) {
             padding: 10px 13px 3px 15px;
+            button {
+              margin: 0 15px;
+            }
+            .select {
+              margin: 0 15px;
+            }
           }
           button {
             padding: 0;
@@ -1558,9 +1564,11 @@ body {
   }
 
   .mainDropdownInfo {
+    display: flex;
     .buttonInfo {
       width: 94px;
       height: 60px;
+      padding: 0 20px;
       border-top-left-radius: 7px;
       border-bottom-left-radius: 7px;
       text-decoration: none;
@@ -1582,6 +1590,16 @@ body {
       border-bottom-left-radius: 0px;
       border-left: 0;
       font-size: 18px;
+    }
+    .select {
+      width: 100%;
+      display: inline-block;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left: 0;
+      select {
+        width: 100%;
+      }
     }
   }
 
@@ -2141,4 +2159,33 @@ select {
     }
   }
 
+}
+
+.langSelect {
+  display: inline-block;
+  width: 100%;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding: 0;
+  text-align: left;
+  height: 36px;
+  letter-spacing: -0.6px;
+  color: #394472;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  select {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
 }

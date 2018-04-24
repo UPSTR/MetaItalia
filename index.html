@@ -5,6 +5,7 @@
     <title>Index</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="favicon.ico" />
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
@@ -83,17 +84,24 @@
                             <i class="fas fa-shopping-cart"></i>
                             <span class="separator"></span> Корзина
                         </button>
-                        <div class="dropdown btn-block">
-                            <button class="btn btn-light dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="img/ru.png" alt="">
-                                <span class="separator"></span> Русский
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Русский</a>
-                                <a class="dropdown-item" href="#">Английский</a>
-                                <a class="dropdown-item" href="#">Немецкий</a>
-                            </div>
+                        <div class="select selectForm langSelect">
+                            <select name="" id="">
+                                <option value="">Русский</option>
+                                <option value="">Английский</option>
+                                <option value="">Немецкий</option>
+                            </select>
                         </div>
+                        <!--<div class="dropdown btn-block">-->
+                            <!--<button class="btn btn-light dropdown-toggle btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                                <!--<img src="img/ru.png" alt="">-->
+                                <!--<span class="separator"></span> Русский-->
+                            <!--</button>-->
+                            <!--<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
+                                <!--<a class="dropdown-item" href="#">Русский</a>-->
+                                <!--<a class="dropdown-item" href="#">Английский</a>-->
+                                <!--<a class="dropdown-item" href="#">Немецкий</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
                     </div>
                 </div>
             </div>
@@ -163,7 +171,7 @@
     <!--FILTER-->
     <div class="filter">
         <div class="container">
-            <form action="">
+            <form method="post">
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="select">
@@ -196,7 +204,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <button type="button" class="btn btn-block text-center filterBtn">Подобрать</button>
+                        <button type="submit" class="btn btn-block text-center filterBtn">Подобрать</button>
                     </div>
                 </div>
             </form>
@@ -543,15 +551,12 @@
                     </div>
                 </div>
                 <div class="col-sm-6 order-2 order-sm-2 order-md-3 col-md-4 col-lg-3">
-                    <div class="dropdown btnLang">
-                        <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="img/ru.png" alt=""> Русский
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Русский</a>
-                            <a class="dropdown-item" href="#">Английский</a>
-                            <a class="dropdown-item" href="#">Немецкий</a>
-                        </div>
+                    <div class="select selectForm langSelect">
+                        <select name="" id="">
+                            <option value="">Русский</option>
+                            <option value="">Английский</option>
+                            <option value="">Немецкий</option>
+                        </select>
                     </div>
                 </div>
             </div>
